@@ -8,6 +8,38 @@
 </head>
 <body>
     <h1>Temperature Converter</h1>
+    <label for="temp">Temperature:</label>
+    <input type="text" name="temp" id="tempText">
+
+    <!-- RADIO BUTTONS FOR RADIO BUTTONS -->
+    <div>
+        <input type="radio" id="celsius" name="convert">
+        <label for="celsius">Convert to Celsius</label>
+    </div>
+    <div>
+        <input type="radio" id="fahrenheit"name="convert">
+        <label for="fahrenheit">Convert to Fahrenheit</label>
+    </div>
+
+    <!-- CONVERT TEMP BUTTON -->
+    <p>
+        <button name="submit" type="submit" id="convertButton" value="convert">Convert Temperature</button>
+    </p>
+
+    <!-- CONVERTED TEMP TEXT INPUT -->
+    <div>
+        <label for="tempConvert">Converted Temperature:</label>
+        <input type="text" id="tempConvertButton" name="tempConvert">
+    </div>
+
+    <!-- CLEAR TEXT BUTTON -->
+    <p>
+        <button name="submit" type="submit" id="clearButton" value="convert">Clear</button>
+    </p>    
+
+
+
+
 
     <script src="main.js"></script>
 </body>
