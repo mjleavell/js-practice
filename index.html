@@ -8,38 +8,21 @@
 </head>
 <body>
     <h1>Temperature Converter</h1>
-    <label for="temp">Temperature:</label>
-    <input type="text" name="temp" id="tempText">
-
-    <!-- RADIO BUTTONS FOR RADIO BUTTONS -->
-    <div>
-        <input type="radio" id="celsius" name="convert">
-        <label for="celsius">Convert to Celsius</label>
+    <div id="main">
+        <div id="form-fields">
+            <form>
+                <label for="temp-input">Temperature:</label>
+                <input type="text" name="temp-input" id="temp-input"><br>
+                <label for="conversion-radio">Convert to:</label><br>
+                <input type="radio" name="conversion-radio" value="F" class="radio">Fahrenheit<br>
+                <input type="radio" name="conversion-radio" value="C" class="radio">Celsius<br>
+                <button id="submit-btn" type="button">Convert</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
+        <div id="result">
+        </div>
     </div>
-    <div>
-        <input type="radio" id="fahrenheit"name="convert">
-        <label for="fahrenheit">Convert to Fahrenheit</label>
-    </div>
-
-    <!-- CONVERT TEMP BUTTON -->
-    <p>
-        <button name="submit" type="submit" id="convertButton" value="convert">Convert Temperature</button>
-    </p>
-
-    <!-- CONVERTED TEMP TEXT INPUT -->
-    <div>
-        <label for="tempConvert">Converted Temperature:</label>
-        <input type="text" id="tempConvertButton" name="tempConvert">
-    </div>
-
-    <!-- CLEAR TEXT BUTTON -->
-    <p>
-        <button name="submit" type="submit" id="clearButton" value="convert">Clear</button>
-    </p>    
-
-
-
-
 
     <script src="main.js"></script>
 </body>
