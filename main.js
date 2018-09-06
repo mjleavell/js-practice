@@ -1,5 +1,5 @@
 //Create another button that, when clicked, clears any text in the input field.
-let resetButton = document.getElementById('reset-btn');
+let resetButton = document.getElementById('reset');
 
 const toCelsius = (temp) => {
     return (temp - 32) / 1.8;   
