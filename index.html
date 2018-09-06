@@ -8,6 +8,21 @@
 </head>
 <body>
     <h1>Temperature Converter</h1>
+    <div id="main">
+        <div id="form-fields">
+            <form>
+                <label for="temp-input">Temperature:</label>
+                <input type="text" name="temp-input" id="temp-input"><br>
+                <label for="conversion-radio">Convert to:</label><br>
+                <input type="radio" name="conversion-radio" value="F" class="radio">Fahrenheit<br>
+                <input type="radio" name="conversion-radio" value="C" class="radio">Celsius<br>
+                <button id="submit-btn" type="button">Convert</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
+        <div id="result">
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
